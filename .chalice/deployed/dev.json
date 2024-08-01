@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::014498652132:role/product-service-dev",
+      "role_name": "product-service-dev"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:sa-east-1:014498652132:function:product-service-dev"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "23tyho7p9l",
+      "rest_api_url": "https://23tyho7p9l.execute-api.sa-east-1.amazonaws.com/hmg/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
